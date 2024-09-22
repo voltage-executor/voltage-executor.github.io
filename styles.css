@@ -1,0 +1,126 @@
+/* General Body Styling */
+body {
+  background-color: #000;
+  color: #0ff;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  position: relative; /* Position context for rain */
+}
+
+/* Canvas Styling */
+#rainCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Place behind other content */
+}
+
+/* Container Styling */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items at the top */
+  align-items: center;
+  min-height: 100vh; /* Ensure minimum height to fill viewport */
+  max-width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative; /* Position context for child elements */
+  z-index: 1; /* Ensure content is above the background */
+  max-height: 100vh; /* Set max height for scrolling */
+  overflow-y: auto; /* Allow vertical scrolling */
+}
+
+/* Logo Styling */
+.logo {
+  width: 250px;
+  height: auto;
+  margin-bottom: 30px;
+  filter: drop-shadow(0 0 20px #0ff);
+}
+
+/* Neon Button Styling */
+.neon-btn {
+  background-color: transparent;
+  border: 3px solid #0ff;
+  padding: 15px 40px;
+  font-size: 22px;
+  color: #0ff;
+  cursor: pointer;
+  transition: 0.4s;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
+  margin-top: 20px;
+}
+
+.neon-btn:hover {
+  box-shadow: 0 0 30px #0ff, 0 0 60px #0ff, 0 0 90px #0ff;
+  transform: scale(1.1);
+}
+
+/* Description Styling */
+.description {
+  color: #0ff;
+  font-size: 18px;
+  margin-top: 25px;
+  max-width: 600px;
+  line-height: 1.7;
+  text-shadow: 0 0 10px #0ff;
+}
+
+/* Features List Styling */
+.features-list {
+  list-style-type: none;
+  padding: 0;
+  color: #0ff;
+  margin-top: 40px;
+  font-size: 18px;
+  text-align: left;
+  width: 300px;
+}
+
+.features-list li {
+  margin: 15px 0;
+  position: relative;
+  padding-left: 30px;
+  line-height: 1.6;
+}
+
+/* Add glowing icons in feature list */
+.features-list li::before {
+  content: '⚡';
+  position: absolute;
+  left: 0;
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff;
+  font-size: 22px;
+}
+
+/* License Section Styling */
+.license {
+  margin-top: 40px;
+  color: #0ff;
+  font-size: 16px;
+  max-width: 600px;
+  line-height: 1.5;
+  text-shadow: 0 0 10px #0ff;
+}
+
+.license h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #ff0; /* Highlight the header */
+}
+
+.executor-ui {
+  width: 90%; /* Adjust width as needed */
+  max-width: 600px; /* Maximum width for larger screens */
+  margin: 20px 0; /* Space above and below the image */
+  border: 2px solid #0ff; /* Optional: Add a border for better visibility */
+  border-radius: 10px; /* Optional: Rounded corners */
+}
